@@ -1,0 +1,26 @@
+{
+	"name": "app-demo-one",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "ui5 serve -o",
+		"build": "ui5 build self-contained --exclude-task='*' --include-task=minify generateComponentPreload"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"devDependencies": {
+		"@babel/core": "^7.24.0",
+		"@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+		"@babel/plugin-transform-destructuring": "^7.23.3",
+		"@babel/plugin-transform-spread": "^7.23.3",
+		"@babel/preset-env": "^7.24.0",
+		"@ui5/cli": "^3.9.1",
+		"prettier": "^3.0.0-alpha.6",
+		"prettier-plugin-xml": "^0.1.0",
+		"ui5-middleware-livereload": "^3.0.3",
+		"ui5-middleware-simpleproxy": "^3.2.14"
+	}
+}

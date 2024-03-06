@@ -1,0 +1,19 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+    <ViewSettingsDialog confirm="onConfirmFilter">
+        <filterItems>
+            <ViewSettingsFilterItem text="{i18n>category}" items="{/Categories}" key="Category/ID" >
+                <items>
+                    <ViewSettingsItem text="{Name}" key="{ID}" />
+                </items>
+            </ViewSettingsFilterItem>
+            
+            <ViewSettingsFilterItem text="{i18n>price}" key="Price" >
+                <items>
+                    <ViewSettingsItem text="Less than €10" key="Price__LT__10" />
+                    <ViewSettingsItem text="Between €10 and €50" key="Price__BT__10__50" />
+                    <ViewSettingsItem text="More than €50" key="Price__GT__50" />
+                </items>
+            </ViewSettingsFilterItem>
+        </filterItems>
+    </ViewSettingsDialog>
+</core:FragmentDefinition>
